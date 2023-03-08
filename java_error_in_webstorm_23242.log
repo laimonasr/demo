@@ -1,30 +1,3 @@
-#
-# A fatal error has been detected by the Java Runtime Environment:
-#
-#  SIGILL (0x4) at pc=0x00007ff80c4ebd76, pid=23242, tid=259
-#
-# JRE version: OpenJDK Runtime Environment JBR-17.0.5+1-653.25-jcef (17.0.5+1) (build 17.0.5+1-b653.25)
-# Java VM: OpenJDK 64-Bit Server VM JBR-17.0.5+1-653.25-jcef (17.0.5+1-b653.25, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, bsd-amd64)
-# Problematic frame:
-# C  [libsystem_kernel.dylib+0x7d76]  __kill+0xa
-#
-# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
-#
-# If you would like to submit a bug report, please visit:
-#   https://youtrack.jetbrains.com/issues/JBR
-# The crash happened outside the Java Virtual Machine in native code.
-# See problematic frame for where to report the bug.
-#
-
----------------  S U M M A R Y ------------
-
-Command Line: -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=512m -XX:+UseG1GC -XX:SoftRefLRUPolicyMSPerMB=50 -XX:CICompilerCount=2 -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -XX:+IgnoreUnrecognizedVMOptions -XX:CompileCommand=exclude,com/intellij/openapi/vfs/impl/FilePartNodeRoot,trieDescend -ea -Dsun.io.useCanonCaches=false -Dsun.java2d.metal=true -Dsun.java2d.metal.displaySync=false -Djbr.catch.SIGABRT=true -Djdk.http.auth.tunneling.disabledSchemes="" -Djdk.attach.allowAttachSelf=true -Djdk.module.illegalAccess.silent=true -Dkotlinx.coroutines.debug=off -XX:ErrorFile=/Users/laimonasrastenis/java_error_in_webstorm_%p.log -XX:HeapDumpPath=/Users/laimonasrastenis/java_error_in_webstorm.hprof -Xmx6048m -Djb.vmOptionsFile=/Users/laimonasrastenis/Library/Application Support/JetBrains/WebStorm2022.3/webstorm.vmoptions --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/jdk.internal.vm=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.fs=ALL-UNNAMED --add-opens=java.base/sun.security.ssl=ALL-UNNAMED --add-opens=java.base/sun.security.util=ALL-UNNAMED --add-opens=java.desktop/com.apple.eawt=ALL-UNNAMED --add-opens=java.desktop/com.apple.eawt.event=ALL-UNNAMED --add-opens=java.desktop/com.apple.laf=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-opens=java.desktop/java.awt.dnd.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.event=ALL-UNNAMED --add-opens=java.desktop/java.awt.image=ALL-UNNAMED --add-opens=java.desktop/java.awt.peer=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED --add-opens=java.desktop/javax.swing=ALL-UNNAMED --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-opens=java.desktop/javax.swing.text.html=ALL-UNNAMED --add-opens=java.desktop/sun.awt.datatransfer=ALL-UNNAMED --add-opens=java.desktop/sun.awt.image=ALL-UNNAMED --add-opens=java.desktop/sun.awt=ALL-UNNAMED --add-opens=java.desktop/sun.font=ALL-UNNAMED --add-opens=java.desktop/sun.java2d=ALL-UNNAMED --add-opens=java.desktop/sun.lwawt=ALL-UNNAMED --add-opens=java.desktop/sun.lwawt.macosx=ALL-UNNAMED --add-opens=java.desktop/sun.swing=ALL-UNNAMED --add-opens=jdk.attach/sun.tools.attach=ALL-UNNAMED --add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-opens=jdk.internal.jvmstat/sun.jvmstat.monitor=ALL-UNNAMED --add-opens=jdk.jdi/com.sun.tools.jdi=ALL-UNNAMED -Djna.boot.library.path=/Applications/WebStorm.app/Contents/lib/jna/amd64 -Dpty4j.preferred.native.folder=/Applications/WebStorm.app/Contents/lib/pty4j -Dsplash=true -Didea.home.path=/Applications/WebStorm.app/Contents -Didea.executable=webstorm -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Djna.noclasspath=true -Djna.nosys=true -Didea.platform.prefix=WebStorm -Didea.paths.selector=WebStorm2022.3 -Didea.vendor.name=JetBrains 
-
-Host: "MacBookPro16,1" x86_64 2600 MHz, 12 cores, 32G, Darwin 22.3.0, macOS 13.2 (22D49)
-Time: Mon Feb 13 08:20:29 2023 EET elapsed time: 20679.379199 seconds (0d 5h 44m 39s)
-
----------------  T H R E A D  ---------------
-
 Current thread (0x00007fbd078a5000):  JavaThread "AWT-AppKit" daemon [_thread_in_native, id=259, stack(0x00007ff7b5124000,0x00007ff7b5924000)]
 
 Stack: [0x00007ff7b5124000,0x00007ff7b5924000],  sp=0x00007ff7b59226b8,  free space=8185k
